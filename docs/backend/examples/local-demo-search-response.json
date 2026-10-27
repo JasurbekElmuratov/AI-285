@@ -1,0 +1,30 @@
+{
+  "items": [
+    {
+      "id": "00000003-0000-4000-8000-000000000001",
+      "organization_id": "00000002-0000-4000-8000-000000000001",
+      "title": "Demo Neighborhood Pantry",
+      "category": "food",
+      "area_slug": "us-pa",
+      "description": "Fictional food-assistance listing for local development. It is not a real provider or offer of support.",
+      "offers": [
+        "Grocery support"
+      ],
+      "eligibility": "Walk-in grocery support for PA residents in the pilot area.",
+      "schedule": "Tuesday and Thursday, 10:00-14:00. Demonstration schedule only.",
+      "cost": "No fee in this fictional example.",
+      "preparation": "Contact the provider to confirm current details.",
+      "contact_url": "https://provider-1.example/contact",
+      "source_url": "https://provider-1.example/services/1",
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "support_instructions": "Fictional example: contact the organization about food donations or volunteering. Do not send money or goods.",
+      "last_verified_at": "2026-10-10T12:00:00Z",
+      "verification_expires_at": "2026-11-09T12:00:00Z"
+    }
+  ],
+  "limit": 20,
+  "offset": 0,
+  "total": 1
+}

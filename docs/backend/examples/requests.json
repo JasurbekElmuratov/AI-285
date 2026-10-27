@@ -1,0 +1,43 @@
+{
+  "notice": "Fictional local-development request examples. UUIDs refer to fixtures.json. Bodies do not grant authorization.",
+  "create": {
+    "organization_id": "00000002-0000-4000-8000-000000000002",
+    "title": "Demo Community Meals",
+    "category": "food",
+    "area_slug": "us-pa",
+    "description": "Fictional food-assistance listing for local development. It is not a real provider or offer of support.",
+    "offers": [
+      "Prepared meals"
+    ],
+    "eligibility": "Adults seeking a prepared meal; eligibility awaits reviewer confirmation.",
+    "schedule": "Monday-Friday, 12:00-13:30. Demonstration schedule only.",
+    "cost": "No fee in this fictional example.",
+    "preparation": "Contact the provider before visiting.",
+    "contact_url": "https://provider-2.example/contact",
+    "source_url": "https://provider-2.example/services/2",
+    "address": null,
+    "latitude": null,
+    "longitude": null,
+    "support_instructions": "Fictional example: contact the organization about food donations or volunteering. Do not send money or goods."
+  },
+  "edit": {
+    "expected_version": 1,
+    "schedule": "Monday-Friday, 12:00-14:00. Fictional updated schedule."
+  },
+  "submit": {
+    "expected_version": 1
+  },
+  "approve": {
+    "expected_version": 1,
+    "decision": "approve",
+    "note": "SIMULATED review: this example does not confirm a real service."
+  },
+  "request_changes": {
+    "expected_version": 1,
+    "decision": "request_changes",
+    "note": "Clarify eligibility and confirm reservation steps before approval."
+  },
+  "archive": {
+    "expected_version": 1
+  }
+}

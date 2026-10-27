@@ -1,0 +1,212 @@
+/* The last two chapters move from a layered picture to a human-led process. */
+.landing-experience .landing-header nav { display: flex; align-items: center; gap: 32px; }
+.section-nav-link { color: var(--muted); font-size: 12px; text-decoration: none; padding: 12px 0; }
+.section-nav-link:hover { color: var(--accent-strong); }
+.on-paper .landing-header { background: linear-gradient(color-mix(in srgb, var(--layer-scene-bg) 93%, transparent), transparent); }
+.on-paper .access-brand { color: var(--ink); }
+.on-paper .story-link, .on-paper .section-nav-link { color: var(--muted); }
+.on-paper .story-link svg { color: var(--accent); }
+.on-paper .story-link:hover, .on-paper .section-nav-link:hover { color: var(--accent-strong); }
+.in-final-scenes .orbit-backdrop { visibility: hidden; }
+.problem-bottom > a { color: var(--muted); text-decoration: none; }
+.problem-bottom > a:hover { color: var(--accent-strong); }
+.section-topline { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.section-aside { font-size: 10px; color: var(--muted); }
+.perspective-section { position: relative; z-index: 1; background: var(--layer-scene-bg); color: var(--ink); scroll-margin-top: 0; }
+.perspective-stage { min-height: 100svh; padding: 98px 6.2vw 36px; display: flex; flex-direction: column; }
+.perspective-stage .eyebrow { color: var(--muted); }
+.perspective-stage .section-aside { color: var(--muted); }
+.perspective-layout { display: grid; grid-template-columns: 46% 54%; align-items: center; width: 100%; max-width: 1600px; margin: auto; gap: 0; flex: 1; }
+.perspective-copy { position: relative; z-index: 2; padding: 32px 0; }
+.perspective-copy h2 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: clamp(45px, 4.85vw, 76px); letter-spacing: -.055em; line-height: 1.09; font-weight: 350; margin: 0; }
+.perspective-copy h2 em { font-style: normal; color: var(--accent); }
+.perspective-intro { max-width: 405px; margin: 23px 0 0; font-size: 14px; line-height: 1.75; color: var(--muted); }
+.perspective-benefits { list-style: none; padding: 0; margin: 27px 0 0; max-width: 410px; }
+.perspective-benefits li { display: flex; gap: 16px; padding: 16px 0; border-top: 1px solid color-mix(in srgb, var(--ink) 12%, transparent); }
+.benefit-number { padding-top: 3px; flex: 0 0 24px; font-size: 9px; color: var(--accent); }
+.perspective-benefits h3 { font-size: 16px; font-weight: 500; letter-spacing: -.025em; margin: 0 0 5px; }
+.perspective-benefits p { font-size: 12px; line-height: 1.65; color: var(--muted); margin: 0; max-width: 325px; }
+.layer-illustration { position: relative; min-width: 0; padding: 18px 0; }
+.layer-stack { position: relative; width: 100%; height: 520px; perspective: 1400px; isolation: isolate; }
+.map-layer { position: absolute; z-index: 1; top: 50%; left: 50%; width: min(76%, 430px); aspect-ratio: 620 / 420; border: 1px solid color-mix(in srgb, var(--muted) 20%, transparent); border-radius: 8px; background: var(--paper-bg); box-shadow: 0 20px 45px color-mix(in srgb, var(--ink) 8%, transparent); transform: translate(-50%, -50%) translateY(var(--layer-y, 90px)) rotateX(var(--layer-angle, 52deg)) rotateZ(-32deg); transform-style: preserve-3d; will-change: transform; }
+.map-layer--1 { z-index: 2; background: var(--paper-middle); --layer-y: 0px; }
+.map-layer--2 { z-index: 3; background: var(--paper-top); border-color: color-mix(in srgb, var(--accent) 60%, transparent); --layer-y: -90px; }
+.map-layer > svg { display: block; width: 100%; height: 100%; overflow: hidden; border-radius: 8px; }
+.paper-label { position: absolute; top: 13px; left: 16px; right: 16px; display: flex; justify-content: space-between; font-size: 9px; color: var(--muted); letter-spacing: .06em; z-index: 1; }
+.map-layer--2 .paper-label { color: var(--accent); }
+.paper-roads { stroke: color-mix(in srgb, var(--muted) 20%, transparent); stroke-width: 1; }
+.paper-main-road { stroke: color-mix(in srgb, var(--muted) 35%, transparent); stroke-width: 5; }
+.paper-buildings { fill: color-mix(in srgb, var(--muted) 8%, transparent); stroke: color-mix(in srgb, var(--muted) 20%, transparent); }
+.paper-river { stroke: color-mix(in srgb, var(--blue) 18%, transparent); stroke-width: 17; }
+.paper-place-dots { fill: var(--paper-place); stroke: var(--paper-bg); stroke-width: 3; }
+.paper-resource-dots { fill: var(--blue); stroke: var(--paper-bg); stroke-width: 4; }
+.paper-resource-symbols { stroke: var(--paper-symbol); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.paper-connections { stroke: var(--accent); stroke-width: 2.5; }
+.paper-connections path { stroke-dasharray: 6 5; }
+.paper-connections circle { fill: var(--paper-hole); stroke-width: 1.5; }
+.paper-corner { position: absolute; bottom: 13px; right: 13px; width: 12px; height: 12px; border-right: 1px solid var(--paper-corner); border-bottom: 1px solid var(--paper-corner); }
+.stack-guide { position: absolute; left: 50%; height: 34px; width: 1px; border-left: 1px dashed color-mix(in srgb, var(--muted) 35%, transparent); }
+.stack-guide--top { top: 0; }
+.stack-guide--bottom { bottom: 0; }
+.layer-key { position: relative; display: flex; justify-content: center; flex-wrap: wrap; align-items: center; gap: 24px; margin-top: 20px; font-size: 10px; color: var(--muted); }
+.layer-key > span { display: flex; align-items: center; gap: 7px; }
+.layer-key-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--paper-place); }
+.layer-key-dot--1 { background: var(--blue); }
+.layer-key-dot--2 { background: var(--accent); }
+.layer-caption { text-align: center; margin: 14px 0 0; font-size: 9px; color: var(--muted); }
+.perspective-bottom { display: flex; justify-content: space-between; align-items: end; gap: 30px; padding-top: 22px; border-top: 1px solid color-mix(in srgb, var(--ink) 12%, transparent); }
+.perspective-bottom > p { margin: 0; font-size: 12px; line-height: 1.7; }
+.perspective-bottom > p > span { color: var(--muted); }
+.perspective-bottom a { display: inline-flex; align-items: center; gap: 24px; min-height: 44px; text-decoration: none; color: var(--accent); font-size: 11px; }
+.perspective-bottom a:hover { color: var(--accent-strong); }
+.perspective-bottom svg { width: 20px; height: 20px; }
+.has-full-scenes .perspective-section { height: 200svh; }
+.has-full-scenes .perspective-stage { position: sticky; top: 0; height: 100svh; min-height: 0; }
+
+.method-section { position: relative; z-index: 1; padding: 108px 6.2vw 0; background: var(--section-bg); scroll-margin-top: 0; }
+.method-inner { max-width: 1600px; margin-inline: auto; }
+.method-section .eyebrow { color: var(--muted); }
+.method-heading { margin: 64px auto 0; text-align: center; }
+.method-heading h2 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; margin: 0; font-size: clamp(46px, 5.2vw, 82px); line-height: 1.08; font-weight: 350; letter-spacing: -.045em; }
+.method-heading em { font-style: normal; color: var(--accent); }
+.method-heading > p { margin: 23px 0 0; color: var(--muted); font-size: 14px; line-height: 1.7; }
+.method-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; padding: 0; margin: 78px 0 0; list-style: none; }
+.method-step { min-width: 0; --step-progress: 0; }
+.method-step-top { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.method-step-icon { display: grid; place-items: center; width: 54px; height: 54px; border: 1px solid color-mix(in srgb, var(--ink) 12%, transparent); border-radius: 14px; color: var(--muted); transition: border-color .4s, color .4s, background .4s, box-shadow .4s; }
+.method-step-icon svg { width: 34px; height: 34px; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.method-step-number { color: var(--subtle); font-size: 10px; letter-spacing: .1em; transition: color .4s; }
+.method-step-line { height: 1px; margin: 24px 0; background: color-mix(in srgb, var(--ink) 12%, transparent); overflow: hidden; }
+.method-step-line > span { display: block; height: 100%; background: var(--accent); transform: scaleX(var(--step-progress)); transform-origin: left; }
+.method-step h3 { margin: 0 0 13px; font-size: 20px; line-height: 1.2; font-weight: 450; letter-spacing: -.03em; }
+.method-step > p { margin: 0; font-size: 12px; line-height: 1.8; color: var(--muted); max-width: 270px; }
+.method-step.is-reached .method-step-icon { color: var(--accent-strong); border-color: color-mix(in srgb, var(--accent) 50%, transparent); background: color-mix(in srgb, var(--accent) 8%, transparent); box-shadow: 0 0 30px color-mix(in srgb, var(--accent) 12%, transparent); }
+.method-step.is-reached .method-step-number { color: var(--accent-strong); }
+.method-principle { display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 54px; padding: 18px 0; color: var(--muted); font-size: 11px; }
+.principle-dot { width: 4px; height: 4px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 13px color-mix(in srgb, var(--accent) 60%, transparent); flex: 0 0 auto; }
+.landing-closing { position: relative; overflow: hidden; isolation: isolate; margin-top: 66px; padding: 111px 20px 113px; border-top: 1px solid color-mix(in srgb, var(--ink) 12%, transparent); text-align: center; }
+.landing-closing .eyebrow { color: var(--muted); font-size: 9px; }
+.landing-closing h3 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: clamp(44px, 4.9vw, 76px); font-weight: 350; letter-spacing: -.045em; line-height: 1.1; margin: 24px 0 0; }
+.landing-closing h3 em { font-style: normal; color: var(--accent-strong); }
+.landing-closing > p:not(.eyebrow) { font-size: 13px; line-height: 1.75; color: var(--muted); margin: 22px 0 0; }
+.landing-closing > a { display: inline-flex; align-items: center; gap: 24px; border: 1px solid color-mix(in srgb, var(--accent) 28%, transparent); border-radius: 999px; padding: 13px 21px; margin-top: 30px; font-size: 11px; color: var(--accent-strong); text-decoration: none; background: color-mix(in srgb, var(--accent) 8%, transparent); transition: background .2s, border-color .2s; }
+.landing-closing > a:hover { background: color-mix(in srgb, var(--accent) 12%, transparent); border-color: color-mix(in srgb, var(--accent) 50%, transparent); }
+.landing-closing > a > svg { width: 18px; height: 18px; transform: rotate(-45deg); }
+.closing-orbit { position: absolute; z-index: -1; left: 50%; top: 50%; width: min(900px, 110%); height: 330px; transform: translate(-50%, -50%); background: radial-gradient(ellipse, color-mix(in srgb, var(--accent) 12%, transparent), transparent 62%); pointer-events: none; }
+.closing-orbit > span { position: absolute; inset: 0; border: 1px solid color-mix(in srgb, var(--accent) 8%, transparent); border-radius: 50%; transform: rotate(-24deg); }
+.closing-orbit > span:nth-child(2) { inset: -30px 70px; transform: rotate(22deg); }
+.closing-orbit > span:nth-child(3) { inset: 40px -65px; transform: rotate(6deg); }
+
+@media (max-height: 760px) and (min-width: 761px) {
+  .perspective-stage { padding-top: 86px; padding-bottom: 26px; }
+  .perspective-copy { padding-block: 18px; }
+  .perspective-copy h2 { font-size: 52px; }
+  .perspective-intro { font-size: 13px; max-width: 425px; margin-top: 18px; line-height: 1.65; }
+  .perspective-benefits { margin-top: 20px; }
+  .perspective-benefits li { padding-block: 11px; }
+  .perspective-benefits h3 { font-size: 15px; margin-bottom: 4px; }
+  .perspective-benefits p { font-size: 11px; }
+  .layer-stack { height: 410px; transform: scale(.88); }
+  .map-layer { width: min(76%, 390px); }
+  .perspective-bottom { padding-top: 15px; }
+  .perspective-bottom p { font-size: 10px; }
+  .layer-illustration { padding-block: 0; }
+}
+@media (max-width: 1050px) {
+  .perspective-stage, .method-section { padding-inline: 5vw; }
+  .perspective-copy h2 { font-size: 48px; }
+  .perspective-intro { max-width: 345px; font-size: 13px; }
+  .perspective-benefits { max-width: 345px; }
+  .perspective-benefits p { font-size: 11px; }
+  .perspective-benefits li { gap: 10px; }
+  .layer-stack { height: 460px; }
+  .map-layer { width: 80%; }
+  .layer-key { gap: 16px; font-size: 9px; }
+  .method-steps { gap: 23px; }
+  .method-step h3 { font-size: 17px; }
+  .method-step p { font-size: 11px; }
+}
+@media (min-width: 761px) and (max-height: 760px) {
+  .layer-stack { height: 410px; }
+  .layer-key { margin-top: 36px; }
+}
+@media (max-width: 760px) {
+  .landing-experience .landing-header nav { gap: 0; }
+  .section-nav-link { display: none; }
+  .section-aside { display: none; }
+  .section-topline .eyebrow { font-size: 8px; letter-spacing: .08em; }
+  .perspective-stage { padding: 95px 26px 32px; }
+  .perspective-layout { grid-template-columns: 1fr; }
+  .perspective-copy { padding: 36px 0 0; }
+  .perspective-copy h2 { font-size: clamp(40px, 7.2vw, 57px); }
+  .perspective-intro { font-size: 13px; margin-top: 20px; max-width: 485px; }
+  .perspective-benefits { max-width: 485px; margin-top: 28px; }
+  .perspective-benefits li { padding-block: 16px; gap: 15px; }
+  .perspective-benefits h3 { font-size: 16px; }
+  .perspective-benefits p { font-size: 12px; max-width: 395px; }
+  .layer-illustration { width: min(100%, 510px); margin: 22px auto 32px; padding: 0; }
+  .layer-stack { height: 440px; }
+  .map-layer { width: min(78%, 355px); }
+  .paper-label { font-size: 8px; }
+  .layer-key { gap: 20px; font-size: 9px; margin-top: 20px; }
+  .layer-caption { margin-top: 12px; font-size: 9px; }
+  .perspective-bottom { align-items: start; flex-direction: column; gap: 12px; padding-top: 22px; }
+  .perspective-bottom p { font-size: 11px; }
+  .perspective-bottom a { min-height: 40px; }
+  .method-section { padding: 94px 26px 0; }
+  .method-heading { text-align: left; margin-top: 38px; }
+  .method-heading h2 { font-size: clamp(39px, 7.5vw, 57px); line-height: 1.1; }
+  .method-heading p { font-size: 13px; margin-top: 22px; }
+  .method-steps { grid-template-columns: 1fr 1fr; gap: 40px 28px; margin-top: 45px; }
+  .method-step h3 { font-size: 19px; }
+  .method-step p { font-size: 12px; }
+  .method-step-line { margin: 20px 0; }
+  .method-step-icon { width: 47px; height: 47px; border-radius: 12px; }
+  .method-step-icon svg { width: 30px; height: 30px; }
+  .method-principle { font-size: 10px; line-height: 1.7; justify-content: start; align-items: start; margin-top: 38px; padding-block: 16px; }
+  .principle-dot { margin-top: 6px; }
+  .landing-closing { margin-top: 28px; padding: 82px 0 85px; }
+  .landing-closing h3 { font-size: clamp(37px, 7vw, 54px); }
+  .landing-closing .eyebrow { font-size: 8px; }
+  .landing-closing > p:not(.eyebrow) { font-size: 12px; }
+}
+@media (max-width: 430px) {
+  .perspective-stage { padding-inline: 24px; }
+  .perspective-copy h2 { font-size: 39px; }
+  .perspective-intro { font-size: 12px; line-height: 1.75; }
+  .perspective-benefits h3 { font-size: 15px; }
+  .perspective-benefits p { font-size: 11px; }
+  .layer-stack { height: 365px; }
+  .map-layer { width: 80%; }
+  .stack-guide--top { top: 12px; height: 20px; }
+  .stack-guide--bottom { bottom: 12px; height: 20px; }
+  .layer-key { gap: 16px; font-size: 8px; }
+  .method-section { padding-inline: 24px; }
+  .method-heading h2 { font-size: 39px; }
+  .method-steps { grid-template-columns: 1fr; gap: 31px; }
+  .method-step { position: relative; padding-left: 72px; padding-bottom: 24px; }
+  .method-step-top { position: static; display: block; }
+  .method-step-icon { position: absolute; top: 0; left: 0; }
+  .method-step-number { display: block; margin-bottom: 11px; font-size: 9px; }
+  .method-step-line { position: absolute; left: 23px; width: 1px; height: calc(100% - 35px); top: 50px; margin: 0; }
+  .method-step-line > span { transform: scaleY(var(--step-progress)); transform-origin: top; }
+  .method-step h3 { font-size: 21px; margin-bottom: 12px; }
+  .method-step p { font-size: 12px; max-width: none; }
+  .landing-closing h3 { font-size: 37px; }
+}
+@media (max-width: 360px) {
+  .perspective-stage, .method-section { padding-inline: 20px; }
+  .perspective-copy h2, .method-heading h2 { font-size: 35px; }
+  .layer-stack { height: 330px; }
+  .paper-label { font-size: 7px; top: 10px; left: 10px; right: 10px; }
+  .layer-key { gap: 12px; font-size: 8px; }
+  .layer-caption { font-size: 8px; }
+  .method-step { padding-left: 64px; }
+  .landing-closing h3 { font-size: 33px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .map-layer { will-change: auto; }
+  .method-step { --step-progress: 1; }
+  .method-step-icon { color: var(--accent-strong); border-color: color-mix(in srgb, var(--accent) 50%, transparent); }
+  .method-step-number { color: var(--accent-strong); }
+}

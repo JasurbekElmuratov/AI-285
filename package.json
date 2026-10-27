@@ -1,0 +1,35 @@
+{
+  "name": "commonground-prototype",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:api": "node --env-file-if-exists=.env.local --experimental-strip-types backend/dev.ts",
+    "dev:api:demo": "node --env-file-if-exists=.env.local --experimental-strip-types backend/dev.ts --demo",
+    "build": "npm run check:env && npm run typecheck && npm run typecheck:backend && vite build",
+    "check:env": "node backend/check-env.mjs --public-only",
+    "check:setup": "node backend/check-env.mjs",
+    "db:status": "node --env-file-if-exists=.env.local backend/manage-db.mjs status",
+    "db:migrate": "node --env-file-if-exists=.env.local backend/manage-db.mjs migrate",
+    "db:verify": "node --env-file-if-exists=.env.local backend/manage-db.mjs verify",
+    "db:grant-editor": "node --env-file-if-exists=.env.local backend/manage-db.mjs grant-editor",
+    "test:integration": "node --env-file-if-exists=.env.local --experimental-strip-types --test tests/live.integration.mjs",
+    "typecheck": "tsc --noEmit",
+    "typecheck:backend": "tsc --noEmit -p tsconfig.backend.json",
+    "test": "node --experimental-strip-types --test tests/*.test.mjs",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.118.0",
+    "mapbox-gl": "^3.33.0",
+    "postgres": "^3.4.9",
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "@types/three": "^0.186.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.2"
+  }
+}
